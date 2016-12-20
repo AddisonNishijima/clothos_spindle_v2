@@ -19,6 +19,11 @@ a {
       margin-left: 40px;
       font-size: 1.2em;
       font-family: 'Amiko', sans-serif; }
+      @media screen and (max-width: 500px) {
+        .navbar #mainnav li {
+          margin-left: 10px;
+          font-size: 0.8em;
+          font-family: 'Amiko', sans-serif; } }
 
 .jumbo {
   max-width: 100%;
@@ -45,26 +50,9 @@ a {
     margin-left: 40px; }
     #flex-row-2 .flex-item:first-child {
       margin-left: 0; }
-
-#flex-row-3 {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap; }
-  #flex-row-3 .flex-item {
-    margin-top: 40px;
-    margin-left: 40px; }
-    #flex-row-3 .flex-item:first-child {
-      margin-left: 0; }
-
-#flex-row-4 {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap; }
-  #flex-row-4 .flex-item {
-    margin-top: 40px;
-    margin-left: 40px; }
-    #flex-row-4 .flex-item:first-child {
-      margin-left: 0; }
+    @media screen and (max-width: 500px) {
+      #flex-row-2 .flex-item {
+        margin-left: 0; } }
 
 .flex-text {
   font-size: 1em;
@@ -74,7 +62,7 @@ a {
 
 .footer {
   background-color: black;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-content: flex-end; }
@@ -100,6 +88,10 @@ h2 {
     text-align: center;
     font-size: 1em;
     font-family: 'Amiko', sans-serif; }
+  @media screen and (max-width: 500px) {
+    .about-text {
+      margin-left: 2em;
+      margin-right: 2em; } }
 
 .flex-img:hover {
   transform: scale(1.1);
