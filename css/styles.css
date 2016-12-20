@@ -9,26 +9,89 @@
     display: flex;
     align-items: flex-end; }
     .navbar #mainnav li {
-      margin-left: 20px; }
+      margin-left: 40px;
+      font-size: 1.2em;
+      font-family: 'Amiko', sans-serif; }
 
 .jumbo {
+  max-width: 100%;
   display: flex;
   justify-content: center;
-  padding: 40px; }
+  padding-top: 40px;
+  padding-bottom: 20px; }
 
 #flex-row-1 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap; }
   #flex-row-1 .flex-item {
-    margin-left: 20px; }
+    margin-left: 40px; }
+    #flex-row-1 .flex-item:first-child {
+      margin-left: 0; }
 
 #flex-row-2 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap; }
   #flex-row-2 .flex-item {
-    margin-top: 20px;
-    margin-left: 20px; }
+    margin-top: 40px;
+    margin-left: 40px; }
+    #flex-row-2 .flex-item:first-child {
+      margin-left: 0; }
+
+#flex-row-3 {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+  #flex-row-3 .flex-item {
+    margin-top: 40px;
+    margin-left: 40px; }
+    #flex-row-3 .flex-item:first-child {
+      margin-left: 0; }
+
+#flex-row-4 {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+  #flex-row-4 .flex-item {
+    margin-top: 40px;
+    margin-left: 40px; }
+    #flex-row-4 .flex-item:first-child {
+      margin-left: 0; }
+
+.flex-text {
+  font-size: 1em;
+  font-family: 'Amiko', sans-serif;
+  padding: 10px;
+  text-align: center; }
+
+.footer {
+  background-color: black;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end; }
+  .footer p {
+    color: white;
+    font-size: .8em;
+    font-family: 'Amiko', sans-serif;
+    padding: 40px; }
+
+h2 {
+  text-align: center;
+  font-size: 1.4em;
+  font-family: 'Amiko', sans-serif;
+  padding: 40px; }
+
+.about-text {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20em;
+  margin-right: 20em; }
+  .about-text p {
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Amiko', sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
