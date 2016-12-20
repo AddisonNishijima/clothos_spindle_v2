@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    padding: 10px;
+    background: #CED3DC;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -30,6 +39,10 @@
   justify-content: center;
   flex-flow: row wrap;
   .flex-item {
+    &:hover {
+      transform: scale(1.1);
+      transition: 1s;
+    }
     margin-left: 40px;
     &:first-child {
       margin-left: 0;
@@ -43,6 +56,10 @@
   justify-content: center;
   flex-flow: row wrap;
   .flex-item {
+    &:hover {
+      transform: scale(1.1);
+      transition: 1s;
+    }
     margin-top: 40px;
     margin-left: 40px;
     &:first-child {
