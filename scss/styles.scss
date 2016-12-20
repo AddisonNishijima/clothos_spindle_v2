@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -76,12 +80,10 @@ a {
 }
 
 .footer {
-
   background-color: black;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
-  justify-content: center;
-  align-content: flex-end;
+  justify-content: flex-end;
   p {
     color: white;
     font-size: .8em;
