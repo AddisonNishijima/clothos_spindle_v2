@@ -39,10 +39,6 @@ a {
   justify-content: center;
   flex-flow: row wrap;
   .flex-item {
-    &:hover {
-      transform: scale(1.1);
-      transition: 1s;
-    }
     margin-left: 40px;
     &:first-child {
       margin-left: 0;
@@ -56,10 +52,6 @@ a {
   justify-content: center;
   flex-flow: row wrap;
   .flex-item {
-    &:hover {
-      transform: scale(1.1);
-      transition: 1s;
-    }
     margin-top: 40px;
     margin-left: 40px;
     &:first-child {
@@ -134,5 +126,11 @@ h2 {
     font-size: 1em;
     font-family: 'Amiko', sans-serif;
   }
+}
 
+.flex-img {
+  &:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
 }
