@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  #logo {
+    padding-top: 20px;
+    width: 50%;
+    height: 50%;
+  }
+  #mainnav {
+    display: flex;
+    align-items: flex-end;
+    li {
+      margin-left: 20px;
+    }
+  }
+}
+
+.jumbo {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+#flex-row-1 {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  .flex-item {
+    margin-left: 20px;
+  }
+}
+
+#flex-row-2 {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  .flex-item {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
