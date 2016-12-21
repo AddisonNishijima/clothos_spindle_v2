@@ -29,7 +29,10 @@ nav {
 
 footer.page-footer {
   background-color: black;
-  box-shadow: none; }
+  box-shadow: none;
+  font-size: 1em;
+  font-family: 'Amiko', sans-serif;
+  padding: 40px; }
 
 .jumbo {
   max-width: 100%;
