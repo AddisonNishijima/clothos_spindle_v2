@@ -26,9 +26,6 @@
     margin-left: 40px; }
     #flex-row-2 .flex-item:first-child {
       margin-left: 0; }
-    @media screen and (max-width: 500px) {
-      #flex-row-2 .flex-item {
-        margin-left: 0; } }
 
 .flex-text {
   font-size: 1em;
