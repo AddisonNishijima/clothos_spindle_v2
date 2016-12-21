@@ -65,7 +65,7 @@ footer.page-footer {
 
 .flex-img:hover {
   transform: scale(1.1);
-  transition: 1s; }
+  transition: 1s ease-in-out; }
 
 .flex-text {
   font-size: 1em;
