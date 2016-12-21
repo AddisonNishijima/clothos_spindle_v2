@@ -7,124 +7,164 @@
     <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript">
-    /*<![CDATA[*/
+      /*<![CDATA[*/
 
-    (function () {
-      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          ShopifyBuyInit();
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
         } else {
           loadScript();
         }
-      } else {
-        loadScript();
-      }
 
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
 
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: 'clothos-spindle.myshopify.com',
-          apiKey: '71d5a5664938091676e7917c3ad9af51',
-          appId: '6',
-        });
-
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('collection', {
-            id: 359874499,
-            node: document.getElementById('collection-component-02756e48ec9'),
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-      "product": {
-        "buttonDestination": "modal",
-        "variantId": "all",
-        "contents": {
-          "variantTitle": false,
-          "options": false,
-          "description": false,
-          "buttonWithQuantity": false,
-          "quantity": false
-        },
-        "text": {
-          "button": "VIEW PRODUCT"
-        },
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "calc(33.33333% - 30px)",
-              "margin-left": "30px",
-              "margin-bottom": "50px"
-            }
-          }
-        }
-      },
-      "cart": {
-        "contents": {
-          "button": true
-        },
-        "styles": {
-          "footer": {
-            "background-color": "#ffffff"
-          }
-        }
-      },
-      "modalProduct": {
-        "contents": {
-          "variantTitle": false,
-          "buttonWithQuantity": true,
-          "button": false,
-          "quantity": false
-        },
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "100%",
-              "margin-left": "0px",
-              "margin-bottom": "0px"
-            }
-          }
-        }
-      },
-      "productSet": {
-        "styles": {
-          "products": {
-            "@media (min-width: 601px)": {
-              "margin-left": "-30px"
-            }
-          }
-        }
-      }
-    }
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'clothos-spindle.myshopify.com',
+            apiKey: '71d5a5664938091676e7917c3ad9af51',
+            appId: '6',
           });
-        });
+
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('collection', {
+              id: 359874499,
+              node: document.getElementById('collection-component-23cf8a88a76'),
+              moneyFormat: '%24%7B%7Bamount%7D%7D',
+              options: {
+        "product": {
+          "buttonDestination": "modal",
+          "variantId": "all",
+          "contents": {
+            "variantTitle": false,
+            "options": false,
+            "description": false,
+            "buttonWithQuantity": false,
+            "quantity": false
+          },
+          "text": {
+            "button": "VIEW PRODUCT"
+          },
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                "max-width": "calc(50% - 40px)",
+                "margin-left": "40px",
+                "margin-bottom": "50px"
+              }
+            },
+            "button": {
+              "background-color": "#000000",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              ":focus": {
+                "background-color": "#000000"
+              }
+            }
+          }
+        },
+        "cart": {
+          "contents": {
+            "button": true
+          },
+          "styles": {
+            "button": {
+              "background-color": "#000000",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              ":focus": {
+                "background-color": "#000000"
+              }
+            },
+            "footer": {
+              "background-color": "#ffffff"
+            }
+          }
+        },
+        "modalProduct": {
+          "contents": {
+            "variantTitle": false,
+            "buttonWithQuantity": true,
+            "button": false,
+            "quantity": false
+          },
+          "styles": {
+            "product": {
+              "@media (min-width: 601px)": {
+                "max-width": "100%",
+                "margin-left": "0px",
+                "margin-bottom": "0px"
+              }
+            },
+            "button": {
+              "background-color": "#000000",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              ":focus": {
+                "background-color": "#000000"
+              }
+            }
+          }
+        },
+        "toggle": {
+          "styles": {
+            "toggle": {
+              "background-color": "#000000",
+              ":hover": {
+                "background-color": "#000000"
+              },
+              ":focus": {
+                "background-color": "#000000"
+              }
+            }
+          }
+        },
+        "productSet": {
+          "styles": {
+            "products": {
+              "@media (min-width: 601px)": {
+                "margin-left": "-40px"
+              }
+            }
+          }
+        }
       }
-    })();
-    /*]]>*/
-    </script>
+            });
+          });
+        }
+      })();
+      /*]]>*/
+  </script>
   </head>
   <body>
+    <div class="navbar">
+      <img src="img/clothosspinde.png" id="logo"/>
+      <ul id="mainnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
     <div class="container">
-      <div class="navbar">
-        <img src="img/clothosspinde.png" id="logo"/>
-        <ul id="mainnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
       <div class="jumbo">
         <img src="img/banner.jpg" />
       </div>
+      <h2>HAND-DYED, HIGH QUALITY YARN</H2>
       <div class="content">
-        <h2>HAND-DYED, HIGH QUALITY YARN</H2>
-        <div id='collection-component-02756e48ec9'></div>
+        <div id='collection-component-23cf8a88a76'></div>
       </div>
     </div>
     <div class="footer">

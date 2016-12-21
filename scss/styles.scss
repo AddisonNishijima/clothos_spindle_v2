@@ -18,6 +18,10 @@ a {
     padding-top: 20px;
     width: 50%;
     height: 50%;
+    @media screen and (min-width: 800px) {
+      width: 60%;
+      height: 60%;
+    }
   }
   #mainnav {
     display: flex;
@@ -100,6 +104,7 @@ h2 {
 }
 
 .about-text {
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
   margin-left: 20em;
