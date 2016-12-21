@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  p {
+    color: white;
+    font-size: .8em;
+    font-family: 'Amiko', sans-serif;
+    padding: 40px;
+  }
+}
+
+footer.page-footer {
+  background-color: black;
+  box-shadow: none;
+}

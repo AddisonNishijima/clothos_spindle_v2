@@ -1,3 +1,36 @@
+nav {
+  height: 150px;
+  background: none;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: none; }
+  nav ul a {
+    color: black;
+    font-size: 1.3em;
+    font-family: 'Amiko', sans-serif; }
+  @media screen and (max-width: 500px) {
+    nav {
+      background-image: url(../img/logosm.png); } }
+
+.show-on-small-only {
+  color: black; }
+
+.footer {
+  background-color: black;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end; }
+  .footer p {
+    color: white;
+    font-size: .8em;
+    font-family: 'Amiko', sans-serif;
+    padding: 40px; }
+
+footer.page-footer {
+  background-color: black;
+  box-shadow: none; }
+
 .jumbo {
   max-width: 100%;
   display: flex;
@@ -27,22 +60,15 @@
     #flex-row-2 .flex-item:first-child {
       margin-left: 0; }
 
+.flex-img:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
 .flex-text {
   font-size: 1em;
   font-family: 'Amiko', sans-serif;
   padding: 10px;
   text-align: center; }
-
-.footer {
-  background-color: black;
-  margin-top: 40px;
-  display: flex;
-  justify-content: flex-end; }
-  .footer p {
-    color: white;
-    font-size: .8em;
-    font-family: 'Amiko', sans-serif;
-    padding: 40px; }
 
 h2 {
   text-align: center;
@@ -65,35 +91,10 @@ h2 {
     .about-text {
       margin-left: 2em;
       margin-right: 2em; } }
-
-.flex-img:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-nav {
-  height: 150px;
-  background: none;
-  background-image: url(../img/logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: none; }
-  nav ul a {
-    color: black;
-    font-size: 1.3em;
-    font-family: 'Amiko', sans-serif; }
-  @media screen and (max-width: 500px) {
-    nav {
-      background-image: url(../img/logosm.png); } }
-
-footer.page-footer {
-  background-color: black;
-  box-shadow: none; }
-
-.show-on-small-only {
-  color: black; }
-
-.navbar-material .nav-wrapper .brand-logo img {
-  height: 64px; }
+  @media screen and (min-width: 700px) {
+    .about-text {
+      padding-left: 3em;
+      padding-right: 3em; } }
 
 .material-icons {
   color: black; }

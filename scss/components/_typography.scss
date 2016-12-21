@@ -1,0 +1,35 @@
+.flex-text {
+  font-size: 1em;
+  font-family: 'Amiko', sans-serif;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4em;
+  font-family: 'Amiko', sans-serif;
+  padding: 40px;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20em;
+  margin-right: 20em;
+  p {
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Amiko', sans-serif;
+  }
+  @media screen and (max-width: 500px) {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  @media screen and (min-width: 700px) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
