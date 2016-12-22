@@ -62,13 +62,7 @@ main {
 @media (min-width: 1400px) {
   .slider {
     margin: 0 auto;
-    width: 60%; } }
-
-.flex-text {
-  font-size: 1em;
-  font-family: 'Amiko', sans-serif;
-  padding: 10px;
-  text-align: center; }
+    width: 80%; } }
 
 h2 {
   text-align: center;
@@ -81,6 +75,9 @@ p {
   text-align: center;
   font-size: 1.2em;
   font-family: 'Amiko', sans-serif; }
+  @media (max-width: 768px) {
+    p {
+      font-size: 1em; } }
 
 .material-icons {
   color: black; }
