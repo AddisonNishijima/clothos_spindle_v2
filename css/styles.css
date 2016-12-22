@@ -20,8 +20,7 @@ footer.page-footer {
   background-color: black;
   box-shadow: none;
   font-size: 1em;
-  font-family: 'Amiko', sans-serif;
-  padding: 40px; }
+  font-family: 'Amiko', sans-serif; }
   footer.page-footer p {
     text-align: left; }
 
@@ -74,8 +73,7 @@ main {
 h2 {
   text-align: center;
   font-size: 1.4em;
-  font-family: 'Amiko', sans-serif;
-  padding: 20px; }
+  font-family: 'Amiko', sans-serif; }
 
 p {
   letter-spacing: 1.5px;
