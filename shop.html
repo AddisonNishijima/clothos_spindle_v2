@@ -3,237 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Clotho's Spindle</title>
-    <script type="text/javascript">
-      /*<![CDATA[*/
-
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-
-        function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          script.onload = ShopifyBuyInit;
-        }
-
-        function ShopifyBuyInit() {
-          var client = ShopifyBuy.buildClient({
-            domain: 'clothos-spindle.myshopify.com',
-            apiKey: '71d5a5664938091676e7917c3ad9af51',
-            appId: '6',
-          });
-
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('collection', {
-              id: 359874499,
-              node: document.getElementById('collection-component-4e786ceceeb'),
-              moneyFormat: '%24%7B%7Bamount%7D%7D',
-              options: {
-        "product": {
-          "buttonDestination": "modal",
-          "variantId": "all",
-          "contents": {
-            "variantTitle": false,
-            "options": false,
-            "description": false,
-            "buttonWithQuantity": false,
-            "quantity": false
-          },
-          "text": {
-            "button": "VIEW PRODUCT"
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "calc(25% - 20px)",
-                "margin-left": "20px",
-                "margin-bottom": "50px"
-              }
-            },
-            "button": {
-              "background-color": "#000000",
-              "font-family": "Oxygen, sans-serif",
-              ":hover": {
-                "background-color": "#000000",
-                "transform": "scale(1.1)",
-                "transition": "1s ease-in-out"
-              },
-              "border-radius": "30px",
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            },
-            "variantTitle": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "title": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "description": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "price": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "compareAt": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            }
-          },
-          "googleFonts": [
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen"
-          ]
-        },
-        "cart": {
-          "contents": {
-            "button": true
-          },
-          "styles": {
-            "button": {
-              "background-color": "#000000",
-              "font-family": "Oxygen, sans-serif",
-              ":hover": {
-                "background-color": "#000000"
-              },
-              "border-radius": "30px",
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            },
-            "footer": {
-              "background-color": "#ffffff"
-            }
-          },
-          "googleFonts": [
-            "Oxygen"
-          ]
-        },
-        "modalProduct": {
-          "contents": {
-            "variantTitle": false,
-            "buttonWithQuantity": true,
-            "button": false,
-            "quantity": false
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "50%",
-                "margin-left": "20px",
-                "margin-bottom": "20px"
-              }
-            },
-            "button": {
-              "background-color": "#000000",
-              "font-family": "Oxygen, sans-serif",
-              ":hover": {
-                "background-color": "#000000"
-              },
-              "border-radius": "30px",
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            },
-            "variantTitle": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "title": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "description": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "price": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "compareAt": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            }
-          },
-          "googleFonts": [
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen"
-          ]
-        },
-        "toggle": {
-          "styles": {
-            "toggle": {
-              "font-family": "Oxygen, sans-serif",
-              "background-color": "#000000",
-              ":hover": {
-                "background-color": "#000000"
-              },
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            }
-          },
-          "googleFonts": [
-            "Oxygen"
-          ]
-        },
-        "option": {
-          "styles": {
-            "label": {
-              "font-family": "Oxygen, sans-serif"
-            },
-            "select": {
-              "font-family": "Oxygen, sans-serif"
-            }
-          },
-          "googleFonts": [
-            "Oxygen",
-            "Oxygen"
-          ]
-        },
-        "productSet": {
-          "styles": {
-            "products": {
-              "@media (min-width: 601px)": {
-                "margin-left": "-20px"
-              }
-            }
-          }
-        }
-      }
-            });
-          });
-        }
-      })();
-      /*]]>*/
-      </script>
       <link rel="stylesheet" href="css/reset.css">
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
@@ -320,5 +89,238 @@
         </div>
       </div>
     </footer>
+    <!-- BEGIN SHOPIFY SCRIPT -->
+    <script type="text/javascript">
+      /*<![CDATA[*/
+
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'clothos-spindle.myshopify.com',
+            apiKey: '71d5a5664938091676e7917c3ad9af51',
+            appId: '6',
+          });
+
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('collection', {
+              id: 359874499,
+              node: document.getElementById('collection-component-4e786ceceeb'),
+              moneyFormat: '%24%7B%7Bamount%7D%7D',
+              options: {
+                "product": {
+                  "buttonDestination": "modal",
+                  "variantId": "all",
+                  "contents": {
+                    "variantTitle": false,
+                    "options": false,
+                    "description": false,
+                    "buttonWithQuantity": false,
+                    "quantity": false
+                  },
+                  "text": {
+                    "button": "VIEW PRODUCT"
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px"
+                      }
+                    },
+                    "button": {
+                      "background-color": "#000000",
+                      "font-family": "Oxygen, sans-serif",
+                      ":hover": {
+                        "background-color": "#000000",
+                        "transform": "scale(1.1)",
+                        "transition": "1s ease-in-out"
+                      },
+                      "border-radius": "30px",
+                      ":focus": {
+                        "background-color": "#000000"
+                      },
+                      "font-weight": "normal"
+                    },
+                    "variantTitle": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "title": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "description": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "price": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "compareAt": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    }
+                  },
+                  "googleFonts": [
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen"
+                  ]
+                },
+                "cart": {
+                  "contents": {
+                    "button": true
+                  },
+                  "styles": {
+                    "button": {
+                      "background-color": "#000000",
+                      "font-family": "Oxygen, sans-serif",
+                      ":hover": {
+                        "background-color": "#000000"
+                      },
+                      "border-radius": "30px",
+                      ":focus": {
+                        "background-color": "#000000"
+                      },
+                      "font-weight": "normal"
+                    },
+                    "footer": {
+                      "background-color": "#ffffff"
+                    }
+                  },
+                  "googleFonts": [
+                    "Oxygen"
+                  ]
+                },
+                "modalProduct": {
+                  "contents": {
+                    "variantTitle": false,
+                    "buttonWithQuantity": true,
+                    "button": false,
+                    "quantity": false
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "50%",
+                        "margin-left": "20px",
+                        "margin-bottom": "20px"
+                      }
+                    },
+                    "button": {
+                      "background-color": "#000000",
+                      "font-family": "Oxygen, sans-serif",
+                      ":hover": {
+                        "background-color": "#000000"
+                      },
+                      "border-radius": "30px",
+                      ":focus": {
+                        "background-color": "#000000"
+                      },
+                      "font-weight": "normal"
+                    },
+                    "variantTitle": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "title": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "description": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "price": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "compareAt": {
+                      "font-family": "Oxygen, sans-serif",
+                      "font-weight": "normal"
+                    }
+                  },
+                  "googleFonts": [
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen",
+                    "Oxygen"
+                  ]
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "font-family": "Oxygen, sans-serif",
+                      "background-color": "#000000",
+                      ":hover": {
+                        "background-color": "#000000"
+                      },
+                      ":focus": {
+                        "background-color": "#000000"
+                      },
+                      "font-weight": "normal"
+                    }
+                  },
+                  "googleFonts": [
+                    "Oxygen"
+                  ]
+                },
+                "option": {
+                  "styles": {
+                    "label": {
+                      "font-family": "Oxygen, sans-serif"
+                    },
+                    "select": {
+                      "font-family": "Oxygen, sans-serif"
+                    }
+                  },
+                  "googleFonts": [
+                    "Oxygen",
+                    "Oxygen"
+                  ]
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                }
+              }
+            });
+          });
+        }
+      })();
+      /*]]>*/
+      </script>
+    <!-- END SHOPIFY SCRIPT -->
   </body>
 </html>
