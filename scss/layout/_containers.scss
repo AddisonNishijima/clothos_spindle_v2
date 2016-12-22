@@ -1,14 +1,3 @@
-.jumbo {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  @media (max-width: 400px){
-    display: none;
-  }
-}
-
 #flex-row-1 {
   display: flex;
   justify-content: center;
@@ -50,4 +39,15 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+
+.slider {
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    width: 80%;
+  }
+  @media (min-width: 1400px) {
+    margin: 0 auto;
+    width: 60%;
+  }
 }
