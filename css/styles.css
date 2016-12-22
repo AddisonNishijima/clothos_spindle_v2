@@ -76,9 +76,10 @@ h2 {
   font-family: 'Amiko', sans-serif; }
 
 p {
+  line-height: 110%;
   letter-spacing: 1.5px;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Amiko', sans-serif; }
 
 .material-icons {
