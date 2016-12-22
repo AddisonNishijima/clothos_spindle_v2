@@ -6,9 +6,9 @@ nav {
   background-position: center;
   box-shadow: none; }
   nav ul a {
-    color: black;
     font-size: 1.3em;
-    font-family: 'Amiko', sans-serif; }
+    color: black;
+    font-family: "Amiko"; }
   @media (max-width: 500px) {
     nav {
       background-image: url(../img/logosm.png); } }
@@ -20,7 +20,7 @@ footer.page-footer {
   background-color: black;
   box-shadow: none;
   font-size: 1em;
-  font-family: 'Amiko', sans-serif; }
+  font-family: "Amiko"; }
   footer.page-footer p {
     text-align: left; }
 
@@ -65,16 +65,19 @@ main {
     width: 80%; } }
 
 h2 {
-  text-align: center;
   font-size: 1.4em;
-  font-family: 'Amiko', sans-serif; }
+  line-height: normal;
+  color: black;
+  font-family: "Amiko";
+  text-align: center; }
 
 p {
-  line-height: 110%;
-  letter-spacing: 1.5px;
-  text-align: center;
   font-size: 1.2em;
-  font-family: 'Amiko', sans-serif; }
+  line-height: 110%;
+  color: black;
+  font-family: "Amiko";
+  text-align: center;
+  letter-spacing: 1.5px; }
   @media (max-width: 768px) {
     p {
       font-size: 1em; } }

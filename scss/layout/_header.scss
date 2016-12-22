@@ -6,9 +6,7 @@ nav {
   background-position: center;
   box-shadow: none;
   ul a {
-    color: black;
-    font-size: 1.3em;
-    font-family: 'Amiko', sans-serif;
+    @include text(1.3em, $color: black, $font-family: 'Amiko');
   }
   @media (max-width: 500px) {
     background-image: url(../img/logosm.png);

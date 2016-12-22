@@ -1,7 +1,5 @@
 #flex-row-1 {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  @include flex-row(flex, center, row wrap);
   .flex-item {
     margin-left: 40px;
     &:first-child {
@@ -12,9 +10,7 @@
 }
 
 #flex-row-2 {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  @include flex-row(flex, center, row wrap);
   .flex-item {
     margin-top: 40px;
     margin-left: 40px;
