@@ -9,7 +9,7 @@ nav {
     color: black;
     font-size: 1.3em;
     font-family: 'Amiko', sans-serif; }
-  @media screen and (max-width: 500px) {
+  @media (max-width: 500px) {
     nav {
       background-image: url(../img/logosm.png); } }
 
@@ -40,7 +40,7 @@ footer.page-footer {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 20px; }
-  @media screen and (max-width: 400px) {
+  @media (max-width: 400px) {
     .jumbo {
       display: none; } }
 
@@ -66,6 +66,14 @@ footer.page-footer {
 .flex-img:hover {
   transform: scale(1.1);
   transition: 1s ease-in-out; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
 
 .flex-text {
   font-size: 1em;

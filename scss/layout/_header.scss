@@ -10,7 +10,7 @@ nav {
     font-size: 1.3em;
     font-family: 'Amiko', sans-serif;
   }
-  @media screen and (max-width: 500px) {
+  @media (max-width: 500px) {
     background-image: url(../img/logosm.png);
   }
 }
