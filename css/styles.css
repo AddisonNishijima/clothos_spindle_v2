@@ -24,25 +24,6 @@ footer.page-footer {
   footer.page-footer p {
     text-align: left; }
 
-#flex-row-1 {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap; }
-  #flex-row-1 .flex-item {
-    margin-left: 40px; }
-    #flex-row-1 .flex-item:first-child {
-      margin-left: 0; }
-
-#flex-row-2 {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap; }
-  #flex-row-2 .flex-item {
-    margin-top: 40px;
-    margin-left: 40px; }
-    #flex-row-2 .flex-item:first-child {
-      margin-left: 0; }
-
 body {
   display: flex;
   min-height: 100vh;
@@ -50,6 +31,9 @@ body {
 
 main {
   flex: 1 0 auto; }
+
+.card-small {
+  height: 50%; }
 
 @media (min-width: 768px) {
   .slider {
@@ -66,17 +50,27 @@ h2 {
   color: black;
   font-family: "Amiko";
   text-align: center; }
+  @media screen and (max-width: 500px) {
+    h2 {
+      text-align: left;
+      margin-left: 10px; } }
 
 p {
   font-size: 1.2em;
   line-height: 110%;
   color: black;
   font-family: "Amiko";
-  text-align: center;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  text-align: center; }
+  @media screen and (max-width: 500px) {
+    p {
+      text-align: left; } }
   @media (max-width: 768px) {
     p {
       font-size: 1em; } }
+
+.modal p {
+  margin-top: 10px; }
 
 .material-icons {
   color: black; }

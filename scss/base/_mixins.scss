@@ -1,10 +1,9 @@
 // Text
-@mixin text($size, $l-height: null, $color: null, $font-family: null, $text-align: null) {
+@mixin text($size, $l-height: null, $color: null, $font-family: null) {
   font-size: $size;
   line-height: $l-height;
   color: $color;
   font-family: $font-family;
-  text-align: $text-align;
 }
 
 @mixin flex-row($display: null, $justify-content: null, $flex-flow: null) {

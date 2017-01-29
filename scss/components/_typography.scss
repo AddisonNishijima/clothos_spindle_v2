@@ -1,11 +1,24 @@
 h2 {
-  @include text(1.4em, normal, black, 'Amiko', center);
+  @include text(1.4em, normal, black, 'Amiko');
+  text-align: center;
+  @media screen and (max-width: 500px){
+    text-align: left;
+    margin-left: 10px;
+  }
 }
 
  p {
-  @include text(1.2em, 110%, black, 'Amiko', center);
+  @include text(1.2em, 110%, black, 'Amiko');
   letter-spacing: 1.5px;
+   text-align: center;
+   @media screen and (max-width: 500px){
+     text-align: left;
+   }
   @media (max-width: 768px) {
     font-size: 1em;
   }
 }
+
+ .modal p {
+   margin-top: 10px;
+ }
