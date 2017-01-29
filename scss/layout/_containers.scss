@@ -1,3 +1,25 @@
+#flex-row-1 {
+  @include flex-row(flex, center, row wrap);
+  .flex-item {
+    margin-left: 40px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+}
+
+#flex-row-2 {
+  @include flex-row(flex, center, row wrap);
+  .flex-item {
+    margin-top: 40px;
+    margin-left: 40px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -10,6 +32,10 @@ main {
 
 .card-small {
   height: 50%;
+}
+
+a.modal-links {
+  text-align: center;
 }
 
 .slider {
