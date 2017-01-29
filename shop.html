@@ -3,245 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Clotho's Spindle</title>
-    <script type="text/javascript">
-      /*<![CDATA[*/
-
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-
-        function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          script.onload = ShopifyBuyInit;
-        }
-
-        function ShopifyBuyInit() {
-          var client = ShopifyBuy.buildClient({
-            domain: 'clothos-spindle.myshopify.com',
-            apiKey: '71d5a5664938091676e7917c3ad9af51',
-            appId: '6',
-          });
-
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('collection', {
-              id: 359874499,
-              node: document.getElementById('collection-component-4e786ceceeb'),
-              moneyFormat: '%24%7B%7Bamount%7D%7D',
-              options: {
-        "product": {
-          "buttonDestination": "modal",
-          "variantId": "all",
-          "contents": {
-            "variantTitle": false,
-            "options": false,
-            "description": false,
-            "buttonWithQuantity": false,
-            "quantity": false
-          },
-          "text": {
-            "button": "VIEW PRODUCT"
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "calc(25% - 20px)",
-                "margin-left": "20px",
-                "margin-bottom": "50px"
-              }
-            },
-            "button": {
-              "background-color": "#000000",
-              "font-family": "Oxygen, sans-serif",
-              ":hover": {
-                "background-color": "#000000",
-                "transform": "scale(1.1)",
-                "transition": "1s ease-in-out"
-              },
-              "border-radius": "30px",
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            },
-            "variantTitle": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "title": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "description": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "price": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "compareAt": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            }
-          },
-          "googleFonts": [
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen"
-          ]
-        },
-        "cart": {
-          "contents": {
-            "button": true
-          },
-          "styles": {
-            "button": {
-              "background-color": "#000000",
-              "font-family": "Oxygen, sans-serif",
-              ":hover": {
-                "background-color": "#000000"
-              },
-              "border-radius": "30px",
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            },
-            "footer": {
-              "background-color": "#ffffff"
-            }
-          },
-          "googleFonts": [
-            "Oxygen"
-          ]
-        },
-        "modalProduct": {
-          "contents": {
-            "variantTitle": false,
-            "buttonWithQuantity": true,
-            "button": false,
-            "quantity": false
-          },
-          "styles": {
-            "product": {
-              "@media (min-width: 601px)": {
-                "max-width": "50%",
-                "margin-left": "20px",
-                "margin-bottom": "20px"
-              }
-            },
-            "button": {
-              "background-color": "#000000",
-              "font-family": "Oxygen, sans-serif",
-              ":hover": {
-                "background-color": "#000000"
-              },
-              "border-radius": "30px",
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            },
-            "variantTitle": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "title": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "description": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "price": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            },
-            "compareAt": {
-              "font-family": "Oxygen, sans-serif",
-              "font-weight": "normal"
-            }
-          },
-          "googleFonts": [
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen",
-            "Oxygen"
-          ]
-        },
-        "toggle": {
-          "styles": {
-            "toggle": {
-              "font-family": "Oxygen, sans-serif",
-              "background-color": "#000000",
-              ":hover": {
-                "background-color": "#000000"
-              },
-              ":focus": {
-                "background-color": "#000000"
-              },
-              "font-weight": "normal"
-            }
-          },
-          "googleFonts": [
-            "Oxygen"
-          ]
-        },
-        "option": {
-          "styles": {
-            "label": {
-              "font-family": "Oxygen, sans-serif"
-            },
-            "select": {
-              "font-family": "Oxygen, sans-serif"
-            }
-          },
-          "googleFonts": [
-            "Oxygen",
-            "Oxygen"
-          ]
-        },
-        "productSet": {
-          "styles": {
-            "products": {
-              "@media (min-width: 601px)": {
-                "margin-left": "-20px"
-              }
-            }
-          }
-        }
-      }
-            });
-          });
-        }
-      })();
-      /*]]>*/
-      </script>
       <link rel="stylesheet" href="css/reset.css">
       <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
       <!-- Compiled and minified JavaScript -->
-      <script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
       <link rel="stylesheet" href="css/styles.css">
@@ -267,29 +33,168 @@
         </div>
       </nav>
     </header>
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="img/banner.jpg" />
-        </li>
-        <li>
-          <img src="img/banner2.jpg" />
-        </li>
-        <li>
-          <img src="img/banner3.jpg" />
-        </li>
-        <li>
-          <img src="img/banner4.jpg" />
-        </li>
-      </ul>
-    </div>
     <main>
       <h2>HAND-DYED, HIGH QUALITY YARN</H2>
       <div class="row">
         <div class="col m3 l2">
         </div>
         <div class="col s12 m6 l8">
-          <div id='collection-component-4e786ceceeb'></div>
+          <div class="row">
+            <div class="col m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="http://www.ilikewallpaper.net/ipad-wallpapers/download/2268/Square-Pattern-ipad-wallpaper-ilikewallpaper_com.jpg">
+                </div>
+                <div class="card-content">
+                  <p>Example Yarn</p>
+                </div>
+                <div class="card-action">
+                  <!-- Modal Trigger -->
+                  <a href="#modal1">Product Details</a>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Example Product</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">clear</i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="http://www.ilikewallpaper.net/ipad-wallpapers/download/2268/Square-Pattern-ipad-wallpaper-ilikewallpaper_com.jpg">
+                </div>
+                <div class="card-content">
+                  <p>Example Yarn</p>
+                </div>
+                <div class="card-action">
+                  <!-- Modal Trigger -->
+                  <a href="#modal2">Product Details</a>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <h4>Example Product</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+            <div class="col m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="http://www.ilikewallpaper.net/ipad-wallpapers/download/2268/Square-Pattern-ipad-wallpaper-ilikewallpaper_com.jpg">
+                </div>
+                <div class="card-content">
+                  <p>Example Yarn</p>
+                </div>
+                <div class="card-action">
+                  <!-- Modal Trigger -->
+                  <a href="#modal3">Product Details</a>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <h4>Example Product</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 l2">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col m3 l2">
+        </div>
+        <div class="col s12 m6 l8">
+          <div class="row">
+            <div class="col m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="http://www.ilikewallpaper.net/ipad-wallpapers/download/2268/Square-Pattern-ipad-wallpaper-ilikewallpaper_com.jpg">
+                </div>
+                <div class="card-content">
+                  <p>Example Yarn</p>
+                </div>
+                <div class="card-action">
+                  <!-- Modal Trigger -->
+                  <a href="#modal4">Product Details</a>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <h4>Example Product</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+            <div class="col m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="http://www.ilikewallpaper.net/ipad-wallpapers/download/2268/Square-Pattern-ipad-wallpaper-ilikewallpaper_com.jpg">
+                </div>
+                <div class="card-content">
+                  <p>Example Yarn</p>
+                </div>
+                <div class="card-action">
+                  <!-- Modal Trigger -->
+                  <a href="#modal5">Product Details</a>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal5" class="modal">
+                <div class="modal-content">
+                  <h4>Example Product</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+            <div class="col m4">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="http://www.ilikewallpaper.net/ipad-wallpapers/download/2268/Square-Pattern-ipad-wallpaper-ilikewallpaper_com.jpg">
+                </div>
+                <div class="card-content">
+                  <p>Example Yarn</p>
+                </div>
+                <div class="card-action">
+                  <!-- Modal Trigger -->
+                  <a href="#modal6">Product Details</a>
+                </div>
+              </div>
+              <!-- Modal Structure -->
+              <div id="modal6" class="modal">
+                <div class="modal-content">
+                  <h4>Example Product</h4>
+                  <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col m3 l2">
         </div>

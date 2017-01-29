@@ -1,7 +1,7 @@
 #flex-row-1 {
   @include flex-row(flex, center, row wrap);
   .flex-item {
-    margin-left: 40px;
+    //margin-left: 40px;
     &:first-child {
       margin-left: 0;
     }
@@ -20,11 +20,9 @@
   }
 }
 
-.flex-img {
-  &:hover {
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
-  }
+.waves-effect.waves-light.btn {
+  display: block;
+  margin: 0 auto;
 }
 
 body {
@@ -33,8 +31,21 @@ body {
   flex-direction: column;
 }
 
+.flex-link {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   flex: 1 0 auto;
+}
+
+.card-small {
+  height: 50%;
+}
+
+a.modal-links {
+  text-align: center;
 }
 
 .slider {

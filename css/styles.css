@@ -43,10 +43,6 @@ footer.page-footer {
     #flex-row-2 .flex-item:first-child {
       margin-left: 0; }
 
-.flex-img:hover {
-  transform: scale(1.1);
-  transition: 1s ease-in-out; }
-
 body {
   display: flex;
   min-height: 100vh;
