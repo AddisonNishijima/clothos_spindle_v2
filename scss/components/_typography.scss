@@ -25,10 +25,17 @@ h2 {
  }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
-  color: #995192;
   display: table;
   margin: auto;
-   &:hover {
-     color: plum;
-   }
  }
+
+#about {
+  margin-top: 20px;
+}
+
+.grey-text.text-lighten-3 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Amiko";
+  letter-spacing: 1.5px;
+}
