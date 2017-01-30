@@ -20,6 +20,15 @@
   }
 }
 
+.flex-img {
+  height: 50%;
+  width: 50%;
+  &:hover{
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -34,10 +43,6 @@ main {
   @media screen and (max-width: 800px) {
     height: 250px;
   }
-}
-
-a.modal-links {
-  text-align: center;
 }
 
 .slider {
