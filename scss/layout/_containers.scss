@@ -10,15 +10,21 @@
 }
 
 #flex-row-2 {
-  @include flex-row(flex, center, row wrap);
+  @include flex-row(flex, center);
+  flex-wrap: row wrap;
   .flex-item {
     margin-top: 40px;
-    margin-left: 40px;
+    //margin-left: 40px;
     &:first-child {
       margin-left: 0;
     }
   }
 }
+
+//.img {
+//  display: block;
+//  margin: 0 auto;
+//}
 
 .flex-img {
   height: 50%;
@@ -39,11 +45,6 @@ main {
   flex: 1 0 auto;
 }
 
-.card.small {
-  @media screen and (max-width: 800px) {
-    height: 250px;
-  }
-}
 
 .slider {
   @media (min-width: 768px) {

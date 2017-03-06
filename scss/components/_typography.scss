@@ -1,10 +1,6 @@
 h2 {
   @include text(1.4em, normal, black, 'Amiko');
   text-align: center;
-  @media screen and (max-width: 500px){
-    text-align: left;
-    margin-left: 20px;
-  }
 }
 
  p {
@@ -13,7 +9,6 @@ h2 {
    text-align: center;
    @media screen and (max-width: 500px){
      margin-left: 10px;
-     text-align: left;
    }
   @media (max-width: 768px) {
     font-size: 15px;

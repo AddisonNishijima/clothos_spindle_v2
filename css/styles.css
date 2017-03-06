@@ -36,10 +36,9 @@ footer.page-footer {
 #flex-row-2 {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap; }
+  flex-wrap: row wrap; }
   #flex-row-2 .flex-item {
-    margin-top: 40px;
-    margin-left: 40px; }
+    margin-top: 40px; }
     #flex-row-2 .flex-item:first-child {
       margin-left: 0; }
 
@@ -58,10 +57,6 @@ body {
 main {
   flex: 1 0 auto; }
 
-@media screen and (max-width: 800px) {
-  .card.small {
-    height: 250px; } }
-
 @media (min-width: 768px) {
   .slider {
     margin: 0 auto;
@@ -77,10 +72,6 @@ h2 {
   color: black;
   font-family: "Amiko";
   text-align: center; }
-  @media screen and (max-width: 500px) {
-    h2 {
-      text-align: left;
-      margin-left: 20px; } }
 
 p {
   font-size: 18px;
@@ -91,8 +82,7 @@ p {
   text-align: center; }
   @media screen and (max-width: 500px) {
     p {
-      margin-left: 10px;
-      text-align: left; } }
+      margin-left: 10px; } }
   @media (max-width: 768px) {
     p {
       font-size: 15px; } }
