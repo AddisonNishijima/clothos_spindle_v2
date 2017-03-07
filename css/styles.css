@@ -16,6 +16,29 @@ nav {
 .show-on-small-only {
   color: black; }
 
+nav {
+  height: 150px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: none; }
+  nav ul a {
+    font-size: 1.3em;
+    color: white;
+    font-family: "Amiko"; }
+  @media (max-width: 500px) {
+    nav {
+      background-image: url(../img/logosm.png); } }
+
+.show-on-small-only {
+  color: black; }
+
+header {
+  background-image: url(../img/banner2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
 footer.page-footer {
   background-color: black;
   box-shadow: none;
@@ -104,6 +127,6 @@ p {
   letter-spacing: 1.5px; }
 
 .material-icons {
-  color: black; }
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
