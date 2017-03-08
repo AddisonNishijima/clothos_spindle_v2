@@ -42,4 +42,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  @media (max-width: 500px) {
+    height: 30vh;
+  }
 }
