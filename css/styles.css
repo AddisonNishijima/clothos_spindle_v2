@@ -124,7 +124,7 @@ p {
   display: table;
   margin: auto; }
 
-#about {
+#aboutSue {
   margin-top: 20px; }
 
 .grey-text.text-lighten-3 {
@@ -132,6 +132,10 @@ p {
   line-height: 28px;
   font-family: "Amiko";
   letter-spacing: 1.5px; }
+
+@media screen and (max-width: 400px) {
+  #links li {
+    margin-left: 10px; } }
 
 .material-icons {
   color: white; }

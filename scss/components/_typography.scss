@@ -24,7 +24,7 @@ h2 {
   margin: auto;
  }
 
-#about {
+#aboutSue {
   margin-top: 20px;
 }
 
@@ -33,4 +33,12 @@ h2 {
   line-height: 28px;
   font-family: "Amiko";
   letter-spacing: 1.5px;
+}
+
+#links {
+  li {
+    @media screen and (max-width: 400px) {
+      margin-left: 10px;
+    }
+  }
 }
