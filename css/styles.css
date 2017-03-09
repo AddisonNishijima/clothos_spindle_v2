@@ -1,31 +1,14 @@
 nav {
   height: 150px;
   background: none;
-  background-image: url(../img/logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: none; }
-  nav ul a {
-    font-size: 1.3em;
-    color: black;
-    font-family: "Amiko"; }
-  @media (max-width: 500px) {
-    nav {
-      background-image: url(../img/logosm.png); } }
-
-.show-on-small-only {
-  color: black; }
-
-nav {
-  height: 150px;
-  background: none;
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: none; }
   nav ul a {
     font-size: 1.3em;
     color: white;
-    font-family: "Amiko"; }
+    font-family: "Noto Sans";
+    letter-spacing: 2px; }
   @media (max-width: 500px) {
     nav {
       background-image: url(../img/logosm.png); } }
@@ -93,6 +76,14 @@ main {
     width: 80%; } }
 
 #home {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+#about {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+#contactus {
   padding-top: 0;
   padding-bottom: 0; }
 
