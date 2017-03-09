@@ -130,12 +130,14 @@ p {
 .grey-text.text-lighten-3 {
   font-size: 18px;
   line-height: 28px;
-  font-family: "Amiko";
+  font-family: "Amiko", sans-serif;
   letter-spacing: 1.5px; }
 
 @media screen and (max-width: 400px) {
   #links li {
     margin-left: 10px; } }
+#links li a:hover {
+  color: #ffab40 !important; }
 
 .material-icons {
   color: white; }
