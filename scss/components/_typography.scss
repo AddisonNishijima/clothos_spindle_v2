@@ -7,12 +7,13 @@ h2 {
   @include text(18px, 28px, black, 'Amiko');
   letter-spacing: 1.5px;
    text-align: center;
-   @media screen and (max-width: 500px){
+   @media #{$small-and-down} {
      margin-left: 10px;
+     margin-right: 10px;
    }
-  @media (max-width: 768px) {
-    font-size: 15px;
-  }
+   @media #{$medium-and-down} {
+     font-size: 15px;
+   }
 }
 
  .modal p {
