@@ -9,7 +9,7 @@ nav {
     color: white;
     font-family: "Noto Sans";
     letter-spacing: 2px; }
-  @media (max-width: 500px) {
+  @media only screen and (max-width: 992px) {
     nav {
       background-image: url(../img/logosm.png); } }
 
@@ -24,9 +24,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh; }
-  @media (max-width: 500px) {
+  @media only screen and (max-width: 992px) {
     header {
-      height: 30vh; } }
+      height: 30vh !important; } }
 
 footer.page-footer {
   background-color: black;
@@ -57,9 +57,14 @@ footer.page-footer {
 .flex-img {
   height: 50%;
   width: 50%; }
-  .flex-img:hover {
-    transform: scale(1.1);
-    transition: 1s; }
+  @media only screen and (max-width: 992px) {
+    .flex-img {
+      height: 20%;
+      width: 20%; } }
+  @media only screen and (min-width: 601px) {
+    .flex-img:hover {
+      transform: scale(1.1);
+      transition: 1s; } }
 
 body {
   display: flex;
@@ -68,15 +73,6 @@ body {
 
 main {
   flex: 1 0 auto; }
-
-@media (min-width: 768px) {
-  .slider {
-    margin: 0 auto;
-    width: 80%; } }
-@media (min-width: 1400px) {
-  .slider {
-    margin: 0 auto;
-    width: 80%; } }
 
 #home {
   padding-top: 0;
@@ -87,8 +83,12 @@ main {
   padding-bottom: 0; }
 
 #contactus {
-  padding-top: 0;
   padding-bottom: 0; }
+
+#header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 h2 {
   font-size: 1.4em;
