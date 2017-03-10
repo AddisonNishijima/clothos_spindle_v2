@@ -6,8 +6,9 @@ nav {
   background-position: center;
   box-shadow: none;
   ul a {
-    @include text(1.3em, $color: white, $font-family: 'Noto Sans');
-    letter-spacing: 2px;
+    @include text(1.3em, $color: white, $font-family: 'Amiko');
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 4px rgba(0,0,0,.4);
   }
   @media #{$medium-and-down} {
     background-image: url(../img/logosm.png);
@@ -29,5 +30,8 @@ header {
   height: 100vh;
   @media #{$medium-and-down} {
     height: 30vh !important;
+  }
+  @media #{$large-and-up} {
+    height: 100vh !important;
   }
 }

@@ -7,8 +7,9 @@ nav {
   nav ul a {
     font-size: 1.3em;
     color: white;
-    font-family: "Noto Sans";
-    letter-spacing: 2px; }
+    font-family: "Amiko";
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 992px) {
     nav {
       background-image: url(../img/logosm.png); } }
@@ -27,6 +28,9 @@ header {
   @media only screen and (max-width: 992px) {
     header {
       height: 30vh !important; } }
+  @media only screen and (min-width: 993px) {
+    header {
+      height: 100vh !important; } }
 
 footer.page-footer {
   background-color: black;
@@ -79,7 +83,6 @@ main {
   padding-bottom: 0; }
 
 #about {
-  padding-top: 0;
   padding-bottom: 0; }
 
 #contactus {
@@ -90,12 +93,28 @@ main {
   flex-direction: column;
   align-items: center; }
 
+.card.small {
+  max-width: 400px; }
+
+#line {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-bottom: solid 1px #FCFEFE;
+  width: 80vw; }
+  @media only screen and (min-width: 993px) {
+    #line {
+      margin-top: 150px;
+      margin-bottom: 150px; } }
+
 h2 {
   font-size: 1.4em;
   line-height: normal;
   color: black;
   font-family: "Amiko";
   text-align: center; }
+  @media only screen and (min-width: 993px) {
+    h2 {
+      font-size: 40px; } }
 
 p {
   font-size: 18px;
@@ -111,6 +130,9 @@ p {
   @media only screen and (max-width: 992px) {
     p {
       font-size: 15px; } }
+  @media only screen and (min-width: 993px) {
+    p {
+      font-size: 24px; } }
 
 .modal p {
   margin-top: 10px; }
@@ -134,7 +156,14 @@ p {
 #links li a:hover {
   color: #ffab40 !important; }
 
+#header-content p {
+  margin-bottom: 100px;
+  margin-top: 100px; }
+
 .material-icons {
   color: white; }
+
+.modal .material-icons {
+  color: black; }
 
 /*# sourceMappingURL=styles.css.map */

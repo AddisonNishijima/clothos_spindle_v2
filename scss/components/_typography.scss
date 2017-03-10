@@ -1,6 +1,9 @@
 h2 {
   @include text(1.4em, normal, black, 'Amiko');
   text-align: center;
+  @media #{$large-and-up} {
+    font-size: 40px;
+  }
 }
 
  p {
@@ -13,6 +16,9 @@ h2 {
    }
    @media #{$medium-and-down} {
      font-size: 15px;
+   }
+   @media #{$large-and-up} {
+     font-size: 24px;
    }
 }
 
@@ -45,4 +51,9 @@ h2 {
       color: #ffab40 !important;
     }
   }
+}
+
+#header-content p {
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
