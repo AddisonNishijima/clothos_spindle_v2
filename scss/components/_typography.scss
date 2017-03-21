@@ -2,12 +2,12 @@ h2 {
   @include text(1.4em, normal, black, 'Amiko');
   text-align: center;
   @media #{$large-and-up} {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
  p {
-  @include text(18px, 28px, black, 'Amiko');
+  @include text(14px, 28px, black, 'Amiko');
   letter-spacing: 1.5px;
    text-align: center;
    @media #{$small-and-down} {
@@ -15,10 +15,10 @@ h2 {
      margin-right: 10px;
    }
    @media #{$medium-and-down} {
-     font-size: 15px;
+     font-size: 14px;
    }
    @media #{$large-and-up} {
-     font-size: 24px;
+     font-size: 18px;
    }
 }
 

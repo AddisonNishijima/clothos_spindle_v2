@@ -75,12 +75,12 @@ main {
 }
 
 #line {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border-bottom: solid 1px #FCFEFE;
-  width: 80vw;
+  width: 45vw;
   @media #{$large-and-up} {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }

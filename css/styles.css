@@ -97,14 +97,14 @@ main {
   max-width: 400px; }
 
 #line {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   border-bottom: solid 1px #FCFEFE;
-  width: 80vw; }
+  width: 45vw; }
   @media only screen and (min-width: 993px) {
     #line {
-      margin-top: 150px;
-      margin-bottom: 150px; } }
+      margin-top: 50px;
+      margin-bottom: 50px; } }
 
 h2 {
   font-size: 1.4em;
@@ -114,10 +114,10 @@ h2 {
   text-align: center; }
   @media only screen and (min-width: 993px) {
     h2 {
-      font-size: 40px; } }
+      font-size: 30px; } }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 28px;
   color: black;
   font-family: "Amiko";
@@ -129,10 +129,10 @@ p {
       margin-right: 10px; } }
   @media only screen and (max-width: 992px) {
     p {
-      font-size: 15px; } }
+      font-size: 14px; } }
   @media only screen and (min-width: 993px) {
     p {
-      font-size: 24px; } }
+      font-size: 18px; } }
 
 .modal p {
   margin-top: 10px; }
